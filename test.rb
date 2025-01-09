@@ -1045,31 +1045,44 @@
 #   puts u[:user][:profile][:name]
 # end
 
-class Article
+# class Article
 
-  def initialize(author, title, content)
-    @author = author
-    @title = title
-    @content = content
-  end
+#   def initialize(author, title, content)
+#     @author = author
+#     @title = title
+#     @content = content
+#   end
 
-  def author
-    @author
-  end
+#   def author
+#     @author
+#   end
 
-  def title
-    @title
-  end
+#   def title
+#     @title
+#   end
 
-  def content
-    @content
-  end
+#   def content
+#     @content
+#   end
 
+# end
+
+# article = Article.new("阿部","Rubyの素晴らしさついて","Awesome Ruby!")
+# puts "著者: #{article.author}"
+# puts "タイトル: #{article.title}"
+# puts "本文: #{article.content}"
+
+require "date"
+day = Date.today.wday
+days =["日","月","火","水","木","金","土"]
+
+if day == 5
+puts "今日は#{days[day]}曜日だ!"
+else 
+  puts "今日は#{days[day]}曜日だ"
 end
 
-article = Article.new("阿部","Rubyの素晴らしさついて","Awesome Ruby!")
-puts "著者: #{article.author}"
-puts "タイトル: #{article.title}"
-puts "本文: #{article.content}"
-
+# hash = { one: 1, two: 2, three: 3 }
+# puts hash.keys
+# puts hash.values
 
