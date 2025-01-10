@@ -1072,17 +1072,20 @@
 # puts "タイトル: #{article.title}"
 # puts "本文: #{article.content}"
 
-require "date"
-day = Date.today.wday
-days =["日","月","火","水","木","金","土"]
+# require "date"
+# day = Date.today.wday
+# days =["日","月","火","水","木","金","土"]
 
-if day == 5
-puts "今日は#{days[day]}曜日だ!"
-else 
-  puts "今日は#{days[day]}曜日だ"
+# if day == 5
+# puts "今日は#{days[day]}曜日だ!"
+# else 
+#   puts "今日は#{days[day]}曜日だ"
+# end
+
+a=1
+b=2
+
+unless a + b <= 0
+  puts "計算結果は0より大きいです"
+
 end
-
-# hash = { one: 1, two: 2, three: 3 }
-# puts hash.keys
-# puts hash.values
-
