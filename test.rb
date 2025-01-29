@@ -1170,10 +1170,20 @@ class Article
     @title = title
     @content = content
   end
-end
 
-author = 阿部
-title = rubyの素晴らしさについて
-content = Awesome Ruby!
+  def auther
+    @auther
+  end
 
-puts 著者
+  def title
+    @title
+  end
+
+  def content
+    @content
+  end
+
+  article = Article.new("阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
+ puts "著者: #{article.author}"
+ puts"タイトル: #{article.title}"
+ puts"本文: #{article.content}"
