@@ -1082,10 +1082,98 @@
 #   puts "今日は#{days[day]}曜日だ"
 # end
 
-a=1
-b=2
+# hash ={one:1, two:2, three:3}
 
-unless a + b <= 0
-  puts "計算結果は0より大きいです"
+# puts hash.keys
+# puts hash.values
 
+# # user_data = [
+# #  {user: {profile: {name: 'George'}}},
+# #  {user: {profile: {name: 'Alice'}}},
+# #  {user: {profile: {name: 'Taro'}}},
+# # ]
+
+# # user_data.each do |u|
+# #   puts u[:user][:profile][:name]
+# # end
+
+# # あるいは
+# # user_data.each{ |u| puts u.dig(:user, :profile, :name) }
+
+# class Article
+
+#   def initialize(author, title, content)
+#     @author = author
+#     @title = title
+#     @content = content
+#   end
+
+#   def author
+#     @author
+#   end
+
+#   def title
+#     @title
+#   end
+
+#   def content
+#     @content
+#   end
+
+# end
+
+# article = Article.new("阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
+# puts "著者: #{article.author}"
+# puts "タイトル: #{article.title}"
+# puts "本文: #{article.content}"
+
+# Date.today.wday
+# require "date"
+
+# day = Date.today.wday
+
+# if today == 5
+# puts 今日は#{}曜日だ！
+# else 
+#   puts 今日は#{}曜日だ!
+
+# require "date"
+# day = Date.today.wday
+# days = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"]
+
+
+# if day == 5
+# puts "今日は#{days[day]}だ！"
+# else 
+# puts "今日は#{days[day]}だ！"
+# end
+
+# hash ={"one":1,"two":2,"three":3}
+
+# puts hash.keys
+# puts hash.values
+
+# user_data = [
+#  {user: {profile: {name: 'George'}}},
+#  {user: {profile: {name: 'Alice'}}},
+#  {user: {profile: {name: 'Taro'}}},
+# ]
+
+# user_data.each do|u|
+#   puts u[:user][:profile][:name]
+# end
+
+class Article
+
+  def initialize(author, title, content)
+    @author = author
+    @title = title
+    @content = content
+  end
 end
+
+author = 阿部
+title = rubyの素晴らしさについて
+content = Awesome Ruby!
+
+puts 著者
