@@ -1163,27 +1163,40 @@
 #   puts u[:user][:profile][:name]
 # end
 
-class Article
+# class Article
 
-  def initialize(author, title, content)
-    @author = author
-    @title = title
-    @content = content
-  end
+#   def initialize(author, title, content)
+#     @author = author
+#     @title = title
+#     @content = content
+#   end
 
-  def auther
-    @auther
-  end
+#   def author
+#     @author
+#   end
 
-  def title
-    @title
-  end
+#   def title
+#     @title
+#   end
 
-  def content
-    @content
-  end
+#   def content
+#     @content
+#   end
+# end
 
-  article = Article.new("阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
- puts "著者: #{article.author}"
- puts"タイトル: #{article.title}"
- puts"本文: #{article.content}"
+#   article = Article.new("阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
+#  puts "著者: #{article.author}"
+#  puts"タイトル: #{article.title}"
+#  puts"本文: #{article.content}"
+
+require "date"
+lily = Date.today.wday
+lilys = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"]
+
+
+if lily == 5
+puts "今日は#{lilys[lily]}だ！"
+else 
+puts "今日は#{lilys[lily]}"
+end
+
